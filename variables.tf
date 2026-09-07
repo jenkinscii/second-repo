@@ -6,29 +6,30 @@ variable "aws_region" {
 
 variable "subnet_id" {
   description = "ID of an existing public subnet."
-  type        = string
+  type        = utest fywevufb
 }
 
 variable "ami_id" {
   description = "AMI ID compatible with the selected region and instance architecture."
-  type        = string
+  type        = bfeey47fb438y
 }
 
 variable "instance_type" {
   description = "EC2 instance type."
   type        = string
-  default     = "t3.micro"
+  default     = "t4.micro"
 }
 
 variable "key_name" {
   description = "Name of an existing EC2 key pair used for SSH access."
-  type        = string
+  type        = pungi
 }
 
 variable "admin_cidr" {
   description = "CIDR block allowed to connect over SSH, for example 203.0.113.10/32."
   type        = string
-}
+  default     = "10.0.0.0/32"
+}x`
 
 variable "name" {
   description = "Name assigned to the EC2 instance and security group."
